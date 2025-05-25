@@ -34,7 +34,7 @@ const ToDoList = () => {
 
           <ul className="list-group mt-3">
             {todos.map((item) => (
-              <li key={item.id} className="list-group-item d-flex justify-content-between" style={{wordBreak: 'break-word', backgroundColor: item.color}}>
+              <li key={item.id} className="list-group-item d-flex justify-content-between icon" style={{wordBreak: 'break-word', backgroundColor: item.color}}>
                 <span className="text-wrap text-start ">{item.todo}</span>
                 <span onClick={() => handleDelete(item)} className="text-wrap">
                   <i className="fa-solid fa-trash"></i>
